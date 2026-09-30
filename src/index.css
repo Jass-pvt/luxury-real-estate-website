@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #1D1927;
+  --color-royal: #25263A;
+  --color-ivory: #F4EFE6;
+  --color-champagne: #DCC7B2;
+  --color-champagne-light: #EBE0D3;
+  --color-champagne-dark: #BBA48E;
+  --color-taupe: #A5988A;
+  --color-charcoal: #353032;
+  --color-deepbrown: #5E4F47;
+
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --font-sans: "Manrope", sans-serif;
+
+  --tracking-widest: 0.2em;
+  --tracking-mega: 0.35em;
+}
+
+@layer base {
+  html, body {
+    background-color: #1D1927; /* Dark background matching footer & page sections */
+    min-height: 100vh;
+  }
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1D1927;
+}
+::-webkit-scrollbar-thumb {
+  background: #353032;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DCC7B2;
+}
+
+/* Editorial subtle borders */
+.border-champagne-subtle {
+  border-color: rgba(220, 199, 178, 0.25);
+}
+
+.border-navy-subtle {
+  border-color: rgba(37, 38, 58, 0.12);
+}
+
+/* Glass & Overlay effects */
+.overlay-dark {
+  background: linear-gradient(180deg, rgba(29, 25, 39, 0.4) 0%, rgba(29, 25, 39, 0.95) 100%);
+}
+
+.overlay-dark-side {
+  background: linear-gradient(90deg, rgba(29, 25, 39, 0.95) 0%, rgba(29, 25, 39, 0.6) 50%, rgba(29, 25, 39, 0.2) 100%);
+}
